@@ -1,0 +1,78 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "properties": {
+    "transaction": {
+      "type": "string"
+    },
+    "product": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "name": {
+          "type": "string"
+        }
+      }
+    },
+    "base": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "number"
+        },
+        "currency_code": {
+          "type": "string"
+        }
+      }
+    },
+    "total": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "number"
+        },
+        "currency_code": {
+          "type": "string"
+        }
+      }
+    },
+    "vat": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "number"
+        },
+        "currency_code": {
+          "type": "string"
+        }
+      }
+    },
+    "fee": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "number"
+        },
+        "currency_code": {
+          "type": "string"
+        }
+      }
+    },
+    "coupon": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string"
+        },
+        "value": {
+          "type": "number"
+        }
+      }
+    },
+    "real_conversion_rate": {
+      "type": "number"
+    }
+  },
+  "type": "object"
+}

@@ -1,0 +1,132 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "properties": {
+    "buyer": {
+      "properties": {
+        "email": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "ucode": {
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "created_at": {
+      "type": "string"
+    },
+    "producer": {
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "ucode": {
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "product": {
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "name": {
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "purchase": {
+      "properties": {
+        "approved_date": {
+          "type": "integer"
+        },
+        "commission_as": {
+          "type": "string"
+        },
+        "hotmart_fee": {
+          "properties": {
+            "base": {
+              "type": "number"
+            },
+            "currency_code": {
+              "type": "string"
+            },
+            "fixed": {
+              "type": "number"
+            },
+            "total": {
+              "type": "number"
+            }
+          },
+          "type": "object"
+        },
+        "is_subscription": {
+          "type": "boolean"
+        },
+        "offer": {
+          "properties": {
+            "code": {
+              "type": "string"
+            },
+            "payment_mode": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "order_date": {
+          "type": "integer"
+        },
+        "payment": {
+          "properties": {
+            "installments_number": {
+              "type": "integer"
+            },
+            "method": {
+              "type": "string"
+            },
+            "type": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "price": {
+          "properties": {
+            "currency_code": {
+              "type": "string"
+            },
+            "value": {
+              "type": "number"
+            }
+          },
+          "type": "object"
+        },
+        "status": {
+          "type": "string"
+        },
+        "tracking": {
+          "properties": {
+            "source_sck": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "transaction": {
+          "type": "string"
+        },
+        "warranty_expire_date": {
+          "type": "integer"
+        }
+      },
+      "type": "object"
+    }
+  },
+  "type": "object"
+}

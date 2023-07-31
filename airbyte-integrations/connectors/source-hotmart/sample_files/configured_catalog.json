@@ -1,0 +1,101 @@
+{
+    "streams": [
+        {
+            "stream": {
+              "name": "subscriptions",
+              "json_schema": {
+                "$schema": "http://json-schema.org/draft-07/schema#",
+                "type": "object",
+                "properties": {
+                    "accession_date": {
+                      "type": "integer"
+                    },
+                    "date_next_charge": {
+                      "type": "integer"
+                    },
+                    "end_accession_date": {
+                      "type": "integer"
+                    },
+                    "plan": {
+                      "properties": {
+                        "id": {
+                          "type": "integer"
+                        },
+                        "max_charge_cycles": {
+                          "type": "integer"
+                        },
+                        "name": {
+                          "type": "string"
+                        },
+                        "recurrency_period": {
+                          "type": "integer"
+                        }
+                      },
+                      "type": "object"
+                    },
+                    "price": {
+                      "properties": {
+                        "currency_code": {
+                          "type": "string"
+                        },
+                        "value": {
+                          "type": "number"
+                        }
+                      },
+                      "type": "object"
+                    },
+                    "product": {
+                      "properties": {
+                        "id": {
+                          "type": "integer"
+                        },
+                        "name": {
+                          "type": "string"
+                        },
+                        "ucode": {
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    },
+                    "request_date": {
+                      "type": "integer"
+                    },
+                    "status": {
+                      "type": "string"
+                    },
+                    "subscriber": {
+                      "properties": {
+                        "email": {
+                          "type": "string"
+                        },
+                        "name": {
+                          "type": "string"
+                        },
+                        "ucode": {
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    },
+                    "subscriber_code": {
+                      "type": "string"
+                    },
+                    "subscription_id": {
+                      "type": "integer"
+                    },
+                    "transaction": {
+                      "type": "string"
+                    },
+                    "trial": {
+                      "type": "boolean"
+                    }
+                  }
+                },
+              "supported_sync_modes": ["full_refresh"]
+            },
+            "sync_mode": "full_refresh",
+            "destination_sync_mode": "overwrite"
+          }
+    ]
+  }

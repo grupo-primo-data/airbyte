@@ -1,0 +1,62 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "properties": {
+      "commissions": {
+        "items": {
+          "properties": {
+            "commission": {
+              "properties": {
+                "currency_code": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "number"
+                }
+              },
+              "type": "object"
+            },
+            "source": {
+              "type": "string"
+            },
+            "user": {
+              "properties": {
+                "email": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "ucode": {
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            }
+          },
+          "type": "object"
+        },
+        "type": "array"
+      },
+      "created_at": {
+        "type": "string"
+      },
+      "exchange_rate_currency_payout": {
+        "type": "number"
+      },
+      "product": {
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "name": {
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "transaction": {
+        "type": "string"
+      }
+    },
+    "type": "object"
+  }
